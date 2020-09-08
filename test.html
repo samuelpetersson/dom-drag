@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hejsan</title>
+	<script src="index.js"></script>
+	<style>
+		
+
+			html, body {
+				height: 100%;
+			}
+
+			.particle {
+				width: 100px;
+				height: 100px;
+				border-radius: 50px;
+				margin: -50px 0 0 -50px;
+				background: #f09;
+				position: absolute;
+			}
+
+			#container {
+				background: #111;
+				width: 80%;
+				height: 80%;
+			}
+
+	</style>
+</head>
+<body>
+
+
+
+	<div id="container"></div>
+
+	<script>
+
+
+		var container = document.getElementById('container')
+
+		var current
+
+		drag.createGesture(container, function(state, info) {
+
+			var position = info.position
+			var target = info.target
+			
+
+			if(state == 'began') {
+				current = target.className == 'particle' ? target : document.createElement('div')
+				current.className = 'particle'
+				current.style.left = position.x + 'px'
+				current.style.top = position.y + 'px'
+				container.appendChild(current)
+			}
+
+			if(state == 'moved') {
+				current.style.left = position.x + 'px'
+				current.style.top = position.y + 'px'
+			}
+
+
+			if(state == 'ended') {
+
+			}
+
+		})
+    
+
+  </script>	
+</body>
+</html>

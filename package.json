@@ -1,0 +1,19 @@
+{
+  "name": "dom-drag",
+  "version": "1.0.0",
+  "description": "Recognize drag gesture events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelpetersson/dom-drag.git"
+  },
+  "author": "Samuel Petersson <samuelpetersson@pm.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelpetersson/dom-drag/issues"
+  },
+  "homepage": "https://github.com/samuelpetersson/dom-drag#readme"
+}
